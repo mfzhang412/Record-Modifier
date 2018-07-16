@@ -1,6 +1,6 @@
 # Record-Modifier
 
-The user selects a .txt or .csv file they wish to modify records for. The modifications are as follows: for each line in the .txt or .csv file, that line gets duplicated with a number after that line from 1 to 9999.
+The user selects a .txt or .csv file they wish to modify records for. The modifications are as follows: for each line in the .txt or .csv file, that line gets duplicated with a number following that line from 1 to 9999.
 
 Example:
 
@@ -11,8 +11,7 @@ Doe, John
 Roe, Richard@
 
 Doe, Jane5
-
-
+____________________________________________________
 
 Modified .txt or .csv file --
 
