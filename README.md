@@ -6,7 +6,7 @@ Description: The user selects a .txt or .csv file they wish to modify records fo
 
 Example:
 
-Original .txt or .csv file --
+Original .txt or .csv file ---
 
 Doe, John
 
@@ -15,7 +15,7 @@ Roe, Richard@
 Doe, Jane5
 ____________________________________________________
 
-Modified .txt or .csv file --
+Modified .txt or .csv file ---
 
 Doe, John1
 
