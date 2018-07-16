@@ -1,6 +1,6 @@
 # Record-Modifier
 
-How to run: Run ModifyRecords.class located in 'bin' folder.
+How to run: Run ModifyRecords.class located in 'bin' folder. To run, open command prompt, navigate to the 'bin' folder and type 'java ModifyRecords'. To navigate to the 'bin' folder from command prompt, copy the directory from your computer, and type 'cd <copied file directory>', then hit 'enter'.
 
 Description: The user selects a .txt or .csv file they wish to modify records for. The modifications are as follows: for each line in the .txt or .csv file, that line gets duplicated with a number following that line from 1 to 9999.
 
