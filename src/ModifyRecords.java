@@ -78,7 +78,7 @@ class ModifyRecords {
 				return;
 			}
 			
-			System.out.println("Please wait while records are updated (this may take awhile).");
+			System.out.println("Please wait while records are updated. (This may take awhile)");
 			
 			// Read contents of file.
 			FileReader fr = new FileReader(filename);;
