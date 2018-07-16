@@ -5,20 +5,36 @@ The user selects a .txt or .csv file they wish to modify records for. The modifi
 Example:
 
 Original .txt or .csv file --
+
 Doe, John
+
 Roe, Richard@
+
 Doe, Jane5
 
 Modified .txt or .csv file --
+
 Doe, John1
+
 Doe, John2
+
 ...
+
 Doe, John9999
+
 Roe, Richard@1
+
 Roe, Richard@2
+
 ...
+
 Roe, Richard@9999
+
 Doe, Jane51
+
 Doe, Jane52
+
 ...
+
 Doe, Jane59999
+
