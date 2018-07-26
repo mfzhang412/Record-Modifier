@@ -66,6 +66,7 @@ class ModifyRecords {
 			// would need to import javax.swing.JOptionPane
 		
 		int upperBound = 9999; // number of times each record is to be repeated
+		int index = 0; // the index to be repeated
 		try {
 			// Obtain file path.
 			String filename = "";
@@ -83,10 +84,10 @@ class ModifyRecords {
 			// Read contents of file.
 			FileReader fr = new FileReader(filename);;
 			BufferedReader reader = new BufferedReader(fr);
-			ArrayList<String> linelist = new ArrayList<String>();
+			ArrayList<String[]> linelist = new ArrayList<String[]>();
 			String str;
 			while ((str = reader.readLine()) != null) {
-				linelist.add(str);
+				linelist.add(str.split(","));
 			}
 			reader.close();
 			fr.close();
@@ -96,10 +97,11 @@ class ModifyRecords {
 			PrintWriter writer = new PrintWriter(filename);
 			writer.flush();
 			for (int i = 0; i < linelist.size(); i++) {
-				String name = linelist.get(i);
+				String[] row = linelist.get(i);
 				for (int j = 1; j <= upperBound; j++) {
-					String line = name + j;
-					writer.println(line);
+					row[index] = String.format("%1$s %2$s", j, row[index]);
+					String insLine = String.join(",", row);
+					writer.println(insLine);
 				}
 			}
 			writer.close();
